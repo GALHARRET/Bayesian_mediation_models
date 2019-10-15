@@ -10,10 +10,12 @@ This R Markdown document provides the code to compute \(NDE(x)\) and
 article Priors comparison in
 [hal-02070053](https://hal.archives-ouvertes.fr/hal-02070053).
 
-## The three models in Stan
-
 Download in this page the following files containing the three models
-defined in Stan model1.stan model2.stan model3.stan
+defined in Stan \[model1.stan, model2.stan, model3.stan. Copy and paste
+this code into your \*.R file
+
+The causal\_effects function provide the MCMC drawing from the posterior
+distribution of NDE(0),NDE(1),NIE(0),NIE(1).
 
 ``` r
 library(rstan)
@@ -63,7 +65,7 @@ summary_effects<-function(res){
 You can run this code on your computer.
 
 Remark: setwd() defines the directory in which the files
-model1.stan,model2.stan, model3.stan are located
+model1.stan,model2.stan, model3.stan are located.
 
 ``` r
 setwd("~/Models/")
@@ -87,8 +89,7 @@ ggplot(df, aes(x=posterior,fill=effects))+geom_density(alpha=0.4)+theme_minimal(
 
 # Example with Model 1:
 
-For Model 1, we need historical data on which we calculate \(m\) and
-\(\Sigma\)
+For Model 1, we need historical data on which we calculate m and SIG
 
 ``` r
 Xh<-rep(0:1,N/2)
