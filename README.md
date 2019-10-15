@@ -1,4 +1,4 @@
-bayesian models for mediation analysis
+Bayesian models for mediation analysis
 ================
 JM GALHARRET
 10/13/2019
