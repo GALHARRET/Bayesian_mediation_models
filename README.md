@@ -6,8 +6,7 @@ JM GALHARRET
 # Introduction
 
 This R Markdown document provides the code to compute \(NDE(x)\) and
-\(NIE(x)\) (\(x \in \{0,1\}\)) with the three models define in the
-article Priors comparison in
+\(NIE(x)\) (\(x \in \{0,1\}\)) with the three models define in Priors comparison 
 [hal-02070053](https://hal.archives-ouvertes.fr/hal-02070053).
 
 Download in this page the following files containing the three models
